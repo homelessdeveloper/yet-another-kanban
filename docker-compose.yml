@@ -1,0 +1,18 @@
+# run with "docker compose up -d"
+version: '3.7'
+
+volumes:
+  pg_data:
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    volumes:
+      - pg_data:/.docker/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_DB=kanban
+    ports:
+      - "5432:5432"

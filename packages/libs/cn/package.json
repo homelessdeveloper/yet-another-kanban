@@ -1,0 +1,12 @@
+{
+  "name": "@yak/libs/cn",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "clsx": "^1.2.1",
+    "tailwind-merge": "^1.10.0"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts"
+}

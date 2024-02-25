@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <!-- Documentation -->
+    <PackageReference Include="Swashbuckle.AspNetCore" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" />
+    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" />
+
+    <!-- UNCAT -->
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="FluentValidation.AspNetCore" />
+    <PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="MediatR" />
+
+    <!-- LANGUAGE EXT & Other functional libs -->
+    <PackageReference Include="LanguageExt.Core" />
+    <PackageReference Include="LanguageExt.Transformers" />
+    <PackageReference Include="LanguageExt.SysX" />
+
+    <!-- PERSISTENCE -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\Abstractions\Yak.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Core\Common\Yak.Core.Common.csproj" />
+    <ProjectReference Include="..\..\..\Core\Cqrs\Yak.Core.Cqrs.csproj" />
+    <ProjectReference Include="..\..\Identity\shared\Yak.Modules.Identity.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infrastructure\Migrations\" />
+  </ItemGroup>
+
+</Project>
+

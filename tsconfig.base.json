@@ -1,0 +1,47 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "strict": true,
+    "exactOptionalPropertyTypes": false,
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@yak/libs/cn": ["packages/libs/cn/src/index.ts"],
+      "@yak/libs/dnd-kit": ["packages/libs/dnd-kit/src/index.ts"],
+      "@yak/libs/modal-manager": ["packages/libs/modal-manager/src/index.ts"],
+      "@yak/libs/react-query": ["packages/libs/react-query/src/index.ts"],
+      "@yak/web/app": ["packages/web/app/src/index.ts"],
+      "@yak/web/modules/sidebar/widgets": [
+        "packages/web/modules/sidebar/widgets/src/index.ts"
+      ],
+      "@yak/web/modules/workspace/entities": [
+        "packages/web/modules/workspace/entities/src/index.ts"
+      ],
+      "@yak/web/modules/workspace/features": [
+        "packages/web/modules/workspace/features/src/index.ts"
+      ],
+      "@yak/web/modules/workspace/widgets": [
+        "packages/web/modules/workspace/widgets/src/index.ts"
+      ],
+      "@yak/web/pages": ["packages/web/pages/src/index.ts"],
+      "@yak/web/shared/api": ["packages/web/shared/api/src/index.ts"],
+      "@yak/web/shared/modal-manager": [
+        "packages/web/shared/modal-manager/src/index.ts"
+      ],
+      "@yak/web/shared/ui": ["packages/web/shared/ui/src/index.ts"],
+      "@yak/web/storybook": ["packages/web/storybook/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

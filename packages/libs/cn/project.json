@@ -1,0 +1,37 @@
+{
+  "name": "libs-cn",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/cn/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/cn",
+        "main": "packages/libs/cn/src/index.ts",
+        "tsConfig": "packages/libs/cn/tsconfig.lib.json",
+        "assets": ["packages/libs/cn/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/libs/cn/**/*.ts",
+          "packages/libs/cn/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../../coverage/packages/libs/cn"
+      }
+    }
+  },
+  "tags": []
+}

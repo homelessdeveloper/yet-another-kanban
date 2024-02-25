@@ -1,0 +1,63 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- ASP NET CORE specific -->
+    <PackageVersion Include="Microsoft.AspNetCore.App.Ref" Version="7.0.0" />
+
+    <!-- Security -->
+    <PackageVersion Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.13" />
+    <PackageVersion Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.13" />
+    <PackageVersion Include="Npgsql" Version="7.0.6" />
+
+    <!-- Documentation -->
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageVersion Include="Swashbuckle.AspNetCore.ReDoc" Version="6.5.0" />
+
+    <!-- UNCAT -->
+    <PackageVersion Include="FluentValidation" Version="11.5.1" />
+    <PackageVersion Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageVersion Include="MediatR" Version="12.0.1" />
+
+    <!-- LANGUAGE EXT & Other functional libs -->
+    <PackageVersion Include="LanguageExt.Core" Version="4.4.3" />
+    <PackageVersion Include="LanguageExt.Transformers" Version="4.4.3" />
+    <PackageVersion Include="LanguageExt.SysX" Version="4.4.3" />
+
+    <!-- PERSISTENCE -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.13">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageVersion>
+    <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.3" />
+  </ItemGroup>
+
+  <!-- TESTING -->
+  <ItemGroup>
+    <PackageVersion Include="FluentAssertions" Version="6.12.0" />
+    <PackageVersion Include="FakeItEasy" Version="7.0.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing"  Version="7.0.0"/>
+    <PackageVersion Include="Testcontainers" Version="3.5.0" />
+    <PackageVersion Include="Testcontainers.PostgreSql" Version="3.5.0" />
+    <PackageVersion Include="xunit" Version="2.4.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+    <PackageVersion Include="coverlet.collector" Version="3.1.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageVersion>
+  </ItemGroup>
+
+</Project>

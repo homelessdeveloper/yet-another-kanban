@@ -15,7 +15,8 @@ export const UserNameTypeId = Symbol("UserName");
  */
 export type UserName = z.infer<typeof UserName>;
 export const UserName = z.string()
-  .min(1, { message: "Username must be at least 3 characters long" })
-  .max(255, { message: "Username must be 255 characters long at max" })
+  .min(5, { message: "Username must be at least 5 characters long" })
+  .regex(/^[a-zA-Z\s]+$/, { message:"All username characters must be alphabetical"})
+  .max(16, { message: "Username must be 16 characters long at max" })
   .brand(UserNameTypeId);
 

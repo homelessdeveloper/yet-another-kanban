@@ -2,7 +2,7 @@
 
 Maybe in the future I will add better description of this project :)
 
-ADASD
+
 ## Table of Contents
 
 - [Installation](#installation)
